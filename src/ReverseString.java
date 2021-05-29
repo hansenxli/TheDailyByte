@@ -1,3 +1,9 @@
+/**
+ * @author Hansen Li
+ *
+ * @date May 29, 2021
+*/
+
 /*“Cat”, return “taC”
 “The Daily Byte”, return "etyB yliaD ehT”
 “civic”, return “civic”
