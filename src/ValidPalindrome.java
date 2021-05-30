@@ -9,6 +9,8 @@
 "algorithm", return false
 "A man, a plan, a canal: Panama.", return true*/
 
+//Notes: non-alphabetical check not implemented
+
 import java.util.*;
 
 public class ValidPalindrome {
@@ -18,7 +20,7 @@ public class ValidPalindrome {
 		System.out.println("Please enter palindrome to test:");
 		Scanner sc = new Scanner(System.in);
 
-		String input = sc.nextLine();
+		String input = sc.nextLine().toLowerCase();
 		
 		boolean result = ValidCheck(input);
 		
@@ -40,7 +42,7 @@ public class ValidPalindrome {
 
 		// System.out.println(chars);
 
-		for (int i = 0; i < chars.size(); i++) {
+		for (int i = 0; i < chars.size() / 2; i++) {
 			if (chars.get(i) == chars.get(chars.size() - 1 - i)) {
 				continue;
 			} else {
