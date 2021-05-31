@@ -9,7 +9,6 @@
 "algorithm", return false
 "A man, a plan, a canal: Panama.", return true*/
 
-//Notes: non-alphabetical check not implemented
 
 import java.util.*;
 
@@ -38,8 +37,10 @@ public class ValidPalindrome {
 		List<Character> chars = new ArrayList<>();
 
 		for (char ch : st.toCharArray())
-			chars.add(ch);
-
+			if (Character.isLetter(ch)) {
+				chars.add(ch);
+			}
+		
 		// System.out.println(chars);
 
 		for (int i = 0; i < chars.size() / 2; i++) {
