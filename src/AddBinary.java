@@ -25,6 +25,8 @@ public class AddBinary {
 		String binary2 = sc.nextLine();
 
 		System.out.println(addBinary(binary1, binary2));
+		
+		sc.close();
 	}
 
 	public static String addBinary(String b1, String b2) {
